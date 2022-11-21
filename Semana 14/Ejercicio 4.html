@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<h1>CREAR UN ARRAYS POR CAPTURA</h1>
+<h3>METODO SPLICE - CICLO FOR</h3>    
+<script>   
+
+let num;
+let datos=new Array(); 
+
+num=parseInt(prompt("Ingrese cantidad de elementos a ingresar a arrays"));
+for (i=0;i<num;i++){
+
+datos[i]=prompt("Ingrese datos al arrays.."+i);
+}
+
+let dator=prompt("ingrese dato a borrar");
+var indice = datos.indexOf(dator);
+
+if (indice > -1) {
+var index = datos.splice(indice, 1);
+alert("elemento eliminado.... lista nueva:.." + datos);
+}
+
+else
+{
+alert("no se encontró elemento" );  
+}
+
+document.write(datos+",");
+console.log(datos);
+</script>
+</body>
+
+</html>
