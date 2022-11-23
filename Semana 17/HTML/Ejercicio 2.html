@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/Ejercicio 2.css">
+        <script src="../JS/Ejercicio 2.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<h2 style="text-align:center">**** VISOR DE IMÁGENES EN LIGHTBOX ****</h2>
+<br><br><br>
+<div class="row">
+  <div class="column">
+    <img src="../IMG/ordenador-portatil.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <figcaption>Omen 17</figcaption>
+  </div>
+  <div class="column">
+    <img src="../IMG/ordenador.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <figcaption>Imac</figcaption>
+  </div>
+  <div class="column">
+    <img src="../IMG/ordenador-portatil (1).png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <figcaption>Victus by HP 15</figcaption>
+  </div>
+  <div class="column">
+    <img src="../IMG/ordenador 1.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <figcaption>CYBERPOWERPC Gamer Xtreme VR Gaming PC</figcaption>
+  </div>
+</div>
+<!-- Seccion de enlaces a cada imagen en Vista modal Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="../IMG/ordenador-portatil.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="../IMG/ordenador.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="../IMG/ordenador-portatil (1).png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="../IMG/ordenador 1.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- Seccion de columnas de imágenes en miniatura -->
+
+    <div class="column">
+      <img class="demo cursor" src="../IMG/ordenador-portatil.png" style="width:100%" onclick="currentSlide(1)" alt="1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../IMG/ordenador.png" style="width:100%" onclick="currentSlide(2)" alt="2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../IMG/ordenador-portatil (1).png" style="width:100%" onclick="currentSlide(3)" alt="3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../IMG/ordenador 1.png" style="width:100%" onclick="currentSlide(4)" alt="4">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
